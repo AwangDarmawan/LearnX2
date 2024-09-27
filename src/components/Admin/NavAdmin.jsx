@@ -2,13 +2,12 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import btnList from "../../assets/fi_list.svg";
-import btnsearch from "../../assets/bx_search-alt.svg";
+// import btnsearch from "../../assets/bx_search-alt.svg";
 
 import { Link } from 'react-router-dom';
 
 const NavAdmin = () => {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
@@ -22,7 +21,7 @@ const NavAdmin = () => {
           <Offcanvas className="sidebar-offcanvas-body" show={show} onHide={handleClose}>
             <Offcanvas.Header closeButton>
               <Offcanvas.Title>
-                <h1>Hi, Admin!</h1>
+                <h1>Hi, Personalia</h1>
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
@@ -39,13 +38,13 @@ const NavAdmin = () => {
           </Offcanvas>
         </div>
 
-        <div className="admin-user-text">Hi, Admin!</div>
-        <div className="admin-search">
+        <div className="admin-user-text">Hi, Personalia</div>
+        {/* <div className="admin-search">
           <input type="text" placeholder="Cari"/>
           <button className="btn-admin-search">
             <img src={btnsearch} />
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   )

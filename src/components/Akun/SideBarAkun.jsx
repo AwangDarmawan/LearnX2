@@ -29,7 +29,7 @@ const SideBarAkun = () => {
             <p className="mb-0 list-name ">Riwayat Pembayaran</p>
           </li>
         </Link>
-        <Link to={"/"} className="text-decoration-none">
+        <Link to={"/login"} className="text-decoration-none">
           <li className="list-item d-flex align-items-center gap-2">
             <img src={FiLogOut} alt=""/>
             <p className="mb-0 list-name ">Log Out</p>

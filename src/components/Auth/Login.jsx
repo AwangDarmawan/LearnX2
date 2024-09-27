@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { EyeFill, EyeSlashFill } from "react-bootstrap-icons";
 import "../../styles/Auth.css";
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -15,12 +16,12 @@ const Login = () => {
             <div className="auth-form-wrapper">
               <h3 className="txtmasuk font-bold">Masuk</h3>
               <form className="fm">
-                  <label className="mt-3">Email / No Telepon</label>
+                  <label className="mt-3">ID Karyawan</label>
                   <div className="input-form-user">
                     <input
                       type="email"
                       className="form-control-login"
-                      placeholder="Johndoe@gmail.com"
+                      placeholder="5520120121"
                     />
                   </div>
            
@@ -33,18 +34,13 @@ const Login = () => {
                     />
                     <i className="icon-show" onClick={() => setShowPassword(!showPassword)}>{showPassword ? <EyeSlashFill/> : <EyeFill/>}</i>
                   </div>
+                  <Link to="/">
                 <div className="d-grid mb-5 mt-2">
                   <button className="btn btn-masuk " type="submit">
                     Masuk
                   </button>
                 </div>
-                <p className="control-form text-muted text-center">
-                  Belum punya akun?{" "}
-                  <a href="/register" className="text-decoration-none a">
-                    {" "}
-                    Daftar di sini
-                  </a>
-                </p>
+                </Link>
               </form>
             </div>
           </div>

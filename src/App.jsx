@@ -16,6 +16,7 @@ import KelasAdmin from "./pages/KelasAdmin";
 import DetailKelas from "./pages/DetailKelas";
 import PembayaranDetail from "./pages/PembayaranDetail";
 import ResetPass from "./components/Auth/ResetPass";
+import Karyawantetap from "./pages/Karyawantetap";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/notifikasi" element={<Notifikasi />} />
           <Route path="/admin/login" element={<LoginAdmin />} />
           <Route path="/admin/dashboard" element={<DashboardAdmin />} />
+          <Route path="/admin/karyawantetap" element={<Karyawantetap/>} />
           <Route path="/admin/kelas" element={<KelasAdmin />} />
         </Routes>
       </BrowserRouter>

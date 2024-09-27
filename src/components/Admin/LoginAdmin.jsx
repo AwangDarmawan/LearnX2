@@ -1,4 +1,5 @@
 import "../../styles/LoginAdmin.css";
+import { Link } from 'react-router-dom';
 
 const LoginAdmin = () => {
     return (
@@ -21,8 +22,10 @@ const LoginAdmin = () => {
                                 <label>Password</label>
                                 <input type="password" placeholder="Masukkan password" />
                             </div>
-                            <button className="btn-login-admin" type="submit">Masuk</button>
                         </form>
+                        <Link to="/admin/dashboard">
+                            <button className="btn-login-admin" type="submit">Masuk</button>
+                            </Link>
                     </div>
                 </div>
             </div>
